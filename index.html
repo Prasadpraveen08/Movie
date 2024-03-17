@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Theater</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+
+	<header>
+        
+
+    
+        
+		<h1> <img src="/harish/OIP (3).jpg" width="100px" height="50px">Welcome to Our Movie Theater!</h1>
+        
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#nowshowing">Now Showing</a></li>
+			<li><a href="#schedule">Schedule</a></li>
+		<li><a href="#tickets">Buy Tickets</a></li>
+		</ul>
+	</nav>
+	<section id="nowshowing">
+		<h2>Now Showing</h2>
+		<table id="harish"   style="width:50%">
+            <tr>
+                <td  style="width:10%"><img src="/harish/download.jpg" width="100px" height="150px" ><br>LEO</td>
+                <td style="width:10%"><img src="/harish/OIP.jpg" width="100px" height="150px" ><br>THUNIVU</td>
+                <td style="width:10%"><img src="/harish/download (1).jpg" width="100px" height="150px" ><br>12TH FAIL</td>                
+                <td style="width:10%"><img src="/harish/OIP (1).jpg" width="100px" height="150px" ><br>MANJUMMEL<BR>BOYS</td>
+                <td style="width:10%"><img src="/harish/OIP (2).jpg" width="100px" height="150px" ><br>OPPENHEIMER</td>
+
+
+
+            </tr>
+        </table>
+	</section>
+	<section id="schedule">
+		<h2>Schedule</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Movie</th>
+					<th>Time</th>
+					<th>Tickets</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>LEO</td>
+					<td>7:00 AM</td>
+					<td><a href="#">Buy Tickets</a></td>
+				</tr>
+				<tr>
+					<td>THUNIVU</td>
+					<td>9:30 AM</td>
+					<td><a href="#">Buy Tickets</a></td>
+				</tr>
+				<tr>
+					<td>12TH FAIL</td>
+					<td>11:00 AM</td>
+					<td><a href="#">Buy Tickets</a></td>
+				</tr>
+				<tr>
+					<td>MANJUMMEL BOYS</td>
+					<td>2:15 PM</td>
+					<td><a href="#">Buy Tickets</a></td>
+				</tr> 
+				<tr>
+					<td>OPPENHEIMER</td>
+					<td>6:30 PM</td>
+					<td><a href="#">Buy Tickets</a></td>
+				</tr>                                               
+			</tbody>
+		</table>
+	</section>
+	<section id="tickets">
+		<h2>Buy Tickets</h2>
+		<form>
+			<label for="movie">Movie:</label>
+			<select id="movie" name="movie">
+				<option value="movie1">LEO</option>
+				<option value="movie2">THUNIVU</option>
+				<option value="movie3">12TH FAIL</option>
+				<option value="movie3">MANJUMMEL BOYS</option>
+				<option value="movie3">OPPENHEIMER</option>                                               
+                
+			</select>
+			<br>
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date">
+			<br>
+			<label for="time">Time:</label>
+			<select id="time" name="time">
+				<option value="7pm">7:00 PM</option>
+				<option value="930pm">9:30 PM</option>
+			</select>
+			<br>
+			<label for="seats">Seats:</label>
+			<input type="number" id="seats" name="seats" min="1" max="10">
+			<br>
+			<input type="submit" value="Buy Tickets">
+		</form>
+	</section>
+	<footer>
+		<p>&copy; 2023 Movie Theater</p>
+	</footer>
+</body>
+</html>
